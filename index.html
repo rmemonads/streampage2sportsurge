@@ -59,10 +59,12 @@
       <p id="streamStatus" class="status"></p>
     </section>
   </main>
+
 	<style>
 /* =========================================
    AMAZON SPORTS AFFILIATE BANNER
-   Fully Responsive
+   IMAGE: 1812 x 868
+   ASPECT RATIO: ~2.09:1
    ========================================= */
 
 .amazon-sports-ad {
@@ -85,9 +87,7 @@
 }
 
 /* =========================================
-   BANNER IMAGE
-   Keeps the complete image visible
-   and preserves the original aspect ratio
+   IMAGE
    ========================================= */
 
 .amazon-ad-link img {
@@ -98,23 +98,6 @@
   margin: 0;
   padding: 0;
   border: 0;
-  object-fit: contain;
-  object-position: center;
-}
-
-/* =========================================
-   DESKTOP HOVER EFFECT
-   ========================================= */
-
-@media (hover: hover) and (min-width: 769px) {
-
-  .amazon-ad-link img {
-    transition: transform 0.2s ease;
-  }
-
-  .amazon-ad-link:hover img {
-    transform: scale(1.015);
-  }
 }
 
 
@@ -124,10 +107,10 @@
 
 .amazon-paid-label {
   position: absolute;
-  top: 7px;
-  left: 7px;
+  top: 8px;
+  left: 8px;
 
-  padding: 3px 7px;
+  padding: 4px 7px;
 
   background: rgba(0, 0, 0, 0.78);
   color: #ffffff;
@@ -138,6 +121,7 @@
   line-height: 1.2;
 
   border-radius: 3px;
+
   z-index: 2;
 
   white-space: nowrap;
@@ -168,8 +152,24 @@
 
 
 /* =========================================
+   DESKTOP HOVER
+   ========================================= */
+
+@media (hover: hover) and (min-width: 769px) {
+
+  .amazon-ad-link img {
+    transition: transform 0.2s ease;
+  }
+
+  .amazon-ad-link:hover img {
+    transform: scale(1.015);
+  }
+}
+
+
+/* =========================================
    TABLET
-   769px → 481px
+   768px AND BELOW
    ========================================= */
 
 @media (max-width: 768px) {
@@ -193,7 +193,7 @@
     top: 5px;
     left: 5px;
 
-    padding: 2px 5px;
+    padding: 3px 5px;
 
     font-size: 9px;
   }
@@ -224,8 +224,6 @@
   }
 
   .amazon-ad-link img {
-    display: block;
-
     width: 100%;
     height: auto;
     max-width: 100%;
@@ -293,7 +291,7 @@
 
   <a
     class="amazon-ad-link"
-    href="https://amzn.to/4i0mLm7"
+    href="https://amzn.to/3Ue3jbR"
     target="_blank"
     rel="nofollow sponsored noopener"
     aria-label="Shop the TCL 55 inch QM6K TV on Amazon"
@@ -304,6 +302,8 @@
       alt="TCL 55-inch QM6K Mini-LED 4K QLED TV - Shop on Amazon"
       loading="eager"
       decoding="async"
+      width="1812"
+      height="868"
     >
 
     <span class="amazon-paid-label">
