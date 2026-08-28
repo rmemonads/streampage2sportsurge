@@ -8,6 +8,176 @@
   <link rel="stylesheet" href="stream.css" />
 
 
+<style>
+/* =========================================
+   AMAZON SPORTS BANNER
+   ========================================= */
+
+.amazon-sports-ad {
+  width: 100%;
+  max-width: 1200px;
+  margin: 12px auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.amazon-ad-link {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  line-height: 0;
+  text-decoration: none;
+  background: #080808;
+}
+
+/* Banner image */
+.amazon-ad-link img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 170px;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.2s ease;
+}
+
+/* Subtle hover effect on desktop */
+@media (hover: hover) {
+  .amazon-ad-link:hover img {
+    transform: scale(1.015);
+  }
+}
+
+/* Paid-link disclosure */
+.amazon-paid-label {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+
+  padding: 3px 7px;
+
+  background: rgba(0, 0, 0, 0.78);
+  color: #ffffff;
+
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.2;
+
+  border-radius: 3px;
+  z-index: 2;
+}
+
+/* Amazon Associates site disclosure */
+.amazon-associate-disclosure {
+  max-width: 1200px;
+  margin: 4px auto 12px;
+  padding: 0 10px;
+
+  box-sizing: border-box;
+
+  color: #888;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  line-height: 1.4;
+  text-align: right;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  .amazon-sports-ad {
+    margin: 8px auto;
+    padding: 0 6px;
+  }
+
+  .amazon-ad-link {
+    border-radius: 6px;
+  }
+
+  .amazon-ad-link img {
+    max-height: 105px;
+    object-fit: cover;
+  }
+
+  .amazon-paid-label {
+    top: 5px;
+    left: 5px;
+    padding: 2px 5px;
+    font-size: 9px;
+  }
+
+  .amazon-associate-disclosure {
+    padding: 0 7px;
+    margin-top: 3px;
+    font-size: 9px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 480px) {
+
+  .amazon-sports-ad {
+    margin: 6px auto;
+    padding: 0 4px;
+  }
+
+  .amazon-ad-link {
+    border-radius: 5px;
+  }
+
+  .amazon-ad-link img {
+    width: 100%;
+    height: 72px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .amazon-paid-label {
+    top: 4px;
+    left: 4px;
+    padding: 2px 4px;
+    font-size: 8px;
+  }
+
+  .amazon-associate-disclosure {
+    padding: 0 5px;
+    margin: 3px 0 8px;
+    font-size: 8px;
+    text-align: center;
+  }
+}
+
+
+/* =========================================
+   VERY SMALL PHONES
+   ========================================= */
+
+@media (max-width: 360px) {
+
+  .amazon-ad-link img {
+    height: 62px;
+  }
+
+  .amazon-paid-label {
+    font-size: 7px;
+  }
+
+  .amazon-associate-disclosure {
+    font-size: 7px;
+  }
+}
+</style>
 	
 </head>
 <body>
